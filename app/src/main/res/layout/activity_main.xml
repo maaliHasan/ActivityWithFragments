@@ -15,17 +15,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="@string/title"
-        android:textSize="70sp"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="#FFDAA520"
-        />
-
+        android:textSize="70sp" />
 
     <RelativeLayout
+        android:id="@+id/FragmentsContent"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:id="@+id/FragmentsContent"
         android:layout_below="@+id/title"
-        android:layout_marginTop="30dp"></RelativeLayout>
+        android:layout_marginTop="30dp">
+
+    </RelativeLayout>
 
 </RelativeLayout>

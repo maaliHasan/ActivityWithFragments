@@ -8,14 +8,14 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity   {
+public class MainActivity extends AppCompatActivity {
     TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        title=(TextView)findViewById(R.id.title);
+        title = (TextView) findViewById(R.id.title);
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/smart watch.ttf");
         title.setTypeface(typeface);
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -27,9 +27,7 @@ public class MainActivity extends AppCompatActivity   {
         fragmentTransaction.commit();
 
 
-
     }
-
 
 
 }

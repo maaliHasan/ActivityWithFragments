@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.util.Log;
 
 /**
  * Created by mhasan on 4/10/2017.
@@ -31,7 +30,6 @@ public class LauncherFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.signUp) {
-            Log.d("SingnUp", "cliiiiiiiiked!");
             RegisterFragment registerFragment = new RegisterFragment();
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

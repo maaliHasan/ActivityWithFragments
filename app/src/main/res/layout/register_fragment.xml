@@ -38,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:inputType="textPassword"
-        android:text="@string/password"
+        android:text="@string/email"
         android:paddingLeft="40dp"
         android:background="@drawable/round"/>
 

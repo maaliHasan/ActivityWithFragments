@@ -15,7 +15,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="@string/title"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textSize="70sp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="#FFDAA520"
         />
 

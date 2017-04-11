@@ -1,6 +1,5 @@
 package com.example.mhasan.activitywithfragments;
 
-import android.graphics.Typeface;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -25,8 +24,6 @@ public class LauncherFragment extends Fragment implements View.OnClickListener {
         View view;
         view = inflater.inflate(R.layout.lanucher_fragment, container, false);
         SignUp = (TextView) view.findViewById(R.id.signUp);
-        Typeface typeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/fcroissant-sandwich.ttf");
-        SignUp.setTypeface(typeface);
         SignUp.setOnClickListener(this);
         return view;
     }

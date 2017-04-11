@@ -3,4 +3,10 @@
     <string name="ELogin">Email Login</string>
     <string name="FBlogin">FB Login</string>
     <string name="title">Welcome</string>
+    <string name="singUp"> <u><I>Sing Up</I></u></string>
+    <string name="or"> <b>OR</b></string>
+    <string name="userName">Enter your Name</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+
 </resources>

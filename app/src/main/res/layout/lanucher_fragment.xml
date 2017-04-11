@@ -4,14 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="300dp">
 
+
     <Button
         android:id="@+id/FBlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="@string/FBlogin" />
+        android:text="@string/FBlogin"
+        android:background="@drawable/round"/>
 
 
     <Button
@@ -21,6 +22,52 @@
         android:layout_below="@+id/FBlogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="@string/ELogin" />
+        android:text="@string/ELogin"
+        android:background="@drawable/round"/>
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/ELogin"
+        android:id="@+id/LeftSeparator"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Or"
+        android:text="@string/or"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ELogin"
+        android:layout_toRightOf="@+id/LeftSeparator"
+        android:textColor="#FFFFFFFF"/>
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/ELogin"
+        android:id="@+id/rightSeparator"
+        android:layout_toRightOf="@+id/Or"
+        android:layout_marginTop="60dp"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Or"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/singUp"
+        android:textColor="#FFFFFFFF"
+        android:id="@+id/signUp"/>
+
+
+
 
 </RelativeLayout>

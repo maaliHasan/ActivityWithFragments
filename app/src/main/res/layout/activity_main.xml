@@ -16,7 +16,9 @@
         android:layout_marginTop="30dp"
         android:text="@string/title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-        android:textColor="#fff000" />
+        android:textColor="#FFDAA520"
+        />
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,7 +26,5 @@
         android:id="@+id/FragmentsContent"
         android:layout_below="@+id/title"
         android:layout_marginTop="30dp"></RelativeLayout>
-
-
 
 </RelativeLayout>

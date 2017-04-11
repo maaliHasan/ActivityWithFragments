@@ -39,9 +39,11 @@
         android:layout_below="@+id/ELogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:layout_toRightOf="@+id/LeftSeparator"
         android:text="@string/or"
-        android:textColor="#FFFFFFFF" />
+        android:textColor="#FFDAA520" />
 
     <View
         android:id="@+id/rightSeparator"

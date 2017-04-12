@@ -20,6 +20,7 @@ public class LauncherFragment extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+
         View view;
         view = inflater.inflate(R.layout.lanucher_fragment, container, false);
         SignUp = (TextView) view.findViewById(R.id.signUp);
@@ -27,11 +28,12 @@ public class LauncherFragment extends Fragment implements View.OnClickListener {
         return view;
     }
 
+
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.signUp) {
             RegisterFragment registerFragment = new RegisterFragment();
-            FragmentManager fragmentManager = getFragmentManager();
+            FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             fragmentTransaction.replace(R.id.FragmentsContent, registerFragment);

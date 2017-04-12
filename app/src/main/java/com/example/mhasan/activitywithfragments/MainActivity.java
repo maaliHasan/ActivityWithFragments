@@ -5,19 +5,19 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
-    TextView title;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);// retrieve a reference to actionbar
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
         setContentView(R.layout.activity_main);
-        title = (TextView) findViewById(R.id.title);
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/smart watch.ttf");
-        title.setTypeface(typeface);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         LauncherFragment launcherFragment = new LauncherFragment();
@@ -28,6 +28,27 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed() {
+        int fragments = getSupportFragmentManager().getBackStackEntryCount();
+        Log.d("fragments",String.valueOf(fragments));
+        if (fragments == 1) {
+            finish();
+        }
+        super.onBackPressed();
+    }
+
+    /*
+    @Override
+    public boolean onSupportNavigateUp() {
+        getSupportFragmentManager().popBackStack();
+        int fragments = getSupportFragmentManager().getBackStackEntryCount();
+        Log.d("fragments",String.valueOf(fragments));
+        if (fragments == 1) {
+            finish();
+        }
+        return true;
+    }*/
 
 
 }
